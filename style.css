@@ -63,7 +63,7 @@ h6 {
 }
 /* ?======> Home Style */
 #home {
-    background-image: url(../assets/head.jpg);
+    background-image: url(./assets/head.jpg);
     background-position: center;
     background-size: cover;
     height: 100vh;
