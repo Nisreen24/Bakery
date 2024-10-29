@@ -1,0 +1,495 @@
+/* &======> General Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    color: inherit;
+    list-style: none;
+}
+html{
+    scroll-behavior: smooth;
+}
+/* ========== Typography ========== */
+p {
+    font-family: "Open Sans", sans-serif;
+}
+
+/* ========== Headings ========== */
+h2,
+h3,
+h4,
+h6 {
+    color: var(--main-black);
+    font-family: var(--main-font-Alegreya);
+    font-size: 32px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+/* ========== Clear ========== */
+.clr{
+    clear: both;
+}
+/* ========== Color & Font Variables ========== */
+:root {
+    --main-color: #8e7754;
+    --main-black: #303030;
+    --main-white: #ffffff;
+    --main-font-Alegreya: "Alegreya", serif;
+
+    /*^==== P custom Styling for each section */
+    --P-color: #303030c4;
+    --p-font-size: 14px;
+    --p-line-height: 30px;
+    --p--margin-top: 15px;
+    --p-font-weight: 400;
+}
+
+/* !======> Navbar */
+#home .nav .logo img{
+    float: left;
+    width: 20%;
+    padding-top: 10px;
+}
+#home .nav ul{
+    float: right;
+    padding-top: 20px;
+}
+#home .nav ul li{
+    display: inline-block;
+    margin-inline: 10px;
+    font-size: 18px;
+    font-family: var(--main-font-Alegreya);
+}
+/* ?======> Home Style */
+#home {
+    background-image: url(../assets/head.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    overflow: auto;
+    color: var(--main-white);
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+#home .home-content {
+    text-align: center;
+    margin-top: 200px;
+}
+
+#home .home-content h1 {
+    font-size: 75px;
+    font-weight: 100;
+    font-family: var(--main-font-Alegreya);
+
+}
+
+#home .home-content p {
+    font-size: 20px;
+    font-weight: var(--p-font-weight);
+    margin-top: 10px;
+}
+
+/* ========== Button Styles ========== */
+#home .home-content .main-btns button {
+    padding: 20px 25px;
+    margin-inline: 10px;
+    margin-top: 40px;
+    border-radius: 5px;
+    border: none;
+    font-size: 14px;
+    font-weight: bold;
+    color: var(--main-white);
+    cursor: pointer;
+    transition: 0.3s all ease-in;
+}
+
+#home .home-content .main-btns .btn1 {
+    /* Primary button styling */
+    background-color: var(--main-color);
+}
+
+#home .home-content .btn1:hover {
+    /* Hover effect for primary button */
+    color: var(--main-black);
+    background-color: var(--main-white);
+}
+
+#home .home-content .main-btns .btn2 {
+    /* Secondary button styling */
+    color: var(--main-white);
+    border: 2px solid var(--main-white);
+    background-color: transparent;
+}
+
+#home .home-content .btn2:hover {
+    /* Hover effect for secondary button */
+    color: var(--main-black);
+    background-color: var(--main-white);
+}
+
+/* ^======> About Style */
+
+#about {
+    width: 100%;
+    margin-block: 90px;
+    /* Adds vertical spacing above and below the section */
+}
+
+/* ======= About Section: Image Styling ======== */
+
+#about .about-img {
+    width: 49%;
+    display: inline-block;
+    /* Aligns image and content side-by-side */
+    margin-right: 20px;
+    /* Adds space between image and text */
+    padding: 0px 20px;
+    /* Horizontal padding within the image container */
+}
+
+#about .about-img img {
+    width: 100%;
+    /* Ensures image scales to fit its container */
+}
+
+/* ======= About Section: Content Styling ======= */
+
+#about .about-content {
+    width: 49%;
+    display: inline-block;
+    vertical-align: top;
+    /* Aligns content at the top next to image */
+    padding-top: 20px;
+    padding-left: 39px;
+}
+
+/* Heading Style */
+#about .about-content h2 {
+    margin-top: 30px;
+}
+
+/* About Section: Main Paragraph Style */
+#about .about-content p {
+    font-size: var(--p-font-size);
+    line-height: var(--p-line-height);
+    color: var(--P-color);
+    /* Lighter color for body text */
+    margin-top: var(--p--margin-top);
+    font-weight: var(--p-font-weight);
+}
+
+/* ==== About Section: List Styles ====== */
+
+#about .about-content ul {
+    margin-top: 25px;
+    width: 100%;
+}
+
+#about .about-content ul li {
+    margin-bottom: 12px;
+}
+
+/* Icon Style for List Items */
+#about .about-content ul li img {
+    width: 45px;
+    border: #3030303c solid 1px;
+    border-radius: 50%;
+}
+
+/* Paragraph Style for List Items */
+#about .about-content ul li p {
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 10px;
+    font-size: 15px;
+    margin-top: 10px;
+    font-weight: 400;
+}
+
+/* *======> Location Style */
+/* Section for the Location details with text and an image layout */
+
+#location {
+    background-color: #F8F8F8;
+    padding-block: 90px;
+    /* Vertical padding for section spacing */
+}
+
+/* ========== Location Content Styling ========== */
+/* Styles for the text content within the Location section */
+#location .location-content {
+    width: 49%;
+    /* Takes up nearly half of the container width */
+    display: inline-block;
+    vertical-align: top;
+    padding-right: 20px;
+    margin-top: 30px;
+    padding-top: 10px;
+}
+
+/* Location Content Heading */
+#location .location-content h3 {
+    margin-top: 35px;
+}
+
+/* Location Content Paragraph */
+#location .location-content p {
+    font-size: var(--p-font-size);
+    line-height: var(--p-line-height);
+    color: var(--P-color);
+    /* Lighter color for body text */
+    margin-top: var(--p--margin-top);
+    font-weight: var(--p-font-weight);
+}
+
+/* ========== Location Image Styling ========== */
+/* Styles for the image container in the Location section */
+
+#location .location-img {
+    width: 48%;
+    padding-left: 35px;
+    /* Spacing between image and content */
+    display: inline-block;
+    margin-left: 30px;
+    /* Space between image and content */
+}
+
+#location .location-img img {
+    width: 100%;
+}
+
+/* &======> Baking Style */
+
+#baking {
+    margin-block: 90px;
+    /* Adds vertical spacing above and below the section */
+    text-align: center;
+}
+
+/* Heading style within the Baking section */
+#baking h4 {
+    margin-top: 35px;
+}
+
+/* Paragraph style for introductory text */
+#baking p {
+    font-size: var(--p-font-size, 16px);
+    /* Fallback to 16px */
+    line-height: var(--p-line-height, 1.5);
+    /* Default line height */
+    color: var(--P-color, #606060);
+    /* Lighter color for body text */
+    margin-top: 10px;
+    font-weight: var(--p-font-weight, 400);
+    /* Fallback font weight */
+    padding: 10px 20px;
+}
+
+/* ========== Baking Boxes ========== */
+/* Individual boxes in Baking section, laid out in a row */
+
+#baking .box {
+    width: 33%;
+    /* Each box takes up a third of the container */
+    display: inline-block;
+    /* Aligns boxes side by side */
+    margin-top: 40px;
+    padding: 5px 10px;
+}
+
+/* Image styling for Baking boxes */
+#baking .box img {
+    width: 100%;
+    padding: 5px;
+}
+
+/* Title style for each box */
+#baking .box h5 {
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 15px;
+}
+
+
+/* ^======> Map Style */
+#map{
+    background-color: #F8F8F8;
+    padding-block: 90px;
+    min-height: 80vh;
+    padding-block: 90px;
+}
+#map .map-content{
+    width: 48%;
+    display: inline-block;
+    vertical-align: top;
+}
+#map .map-content h6{
+    font-size: 32px;
+    font-weight: 400;
+    margin-bottom: 7px;
+}
+#map .map-content p{
+    font-size: var(--p-font-size, 16px);
+    /* Fallback to 16px */
+    line-height: var(--p-line-height, 1.5);
+    /* Default line height */
+    color: var(--P-color, #606060);
+    /* Lighter color for body text */
+    margin-top: 20px;
+    font-weight: var(--p-font-weight, 400);
+    padding-right: 10px;
+}
+/* ==== Map Section: List Styles ====== */
+
+#map .map-content ul {
+    margin-top: 25px;
+    width: 100%;
+}
+
+#map .map-content ul li {
+    margin-bottom: 12px;
+}
+
+/* Icon Style for List Items */
+#map .map-content ul li img {
+    width: 38px;
+    border: #30303000 solid 1px;
+    background-color: #8E7754;
+    border-radius: 50%;
+}
+
+/* Paragraph Style for List Items */
+#map .map-content ul li p {
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 10px;
+    font-size: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: 400;
+}
+
+#map .map-img{
+    width: 48%;
+    display: inline-block;
+    margin-left: 40px;
+}
+#map .map-img img{
+    width: 100%;
+}
+/* ^======> Contact Style */
+#contact{
+    background-color: #403D38;
+    min-height: 60vh;
+    color: var(--main-white);
+    padding-block: 90px;
+}
+#contact .block{
+    width: 25%;
+    float: left;
+    padding-inline: 20px;
+    
+}
+#contact h6{
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--main-white);
+    margin-bottom: 25px;
+}
+#contact .block-content p{
+    margin-top: 10px;
+    line-height: 30px;
+    font-weight: 400;
+    color: #969696;
+    font-size: 13px;
+}
+
+/* ==== Contact Section: List Styles ====== */
+
+#contact .block ul {
+
+    width: 100%;
+}
+
+#contact .block ul li {
+    /* margin-bottom: 10px; */
+    margin-top: 15px;
+}
+#contact .block ul li hr{
+   opacity: 0.05;
+   margin-top: 5px;
+}
+/* Icon Style for List Items */
+#contact .block ul li img {
+    width: 20px;
+}
+
+/* Paragraph Style for List Items */
+#contact .block ul li p {
+    display: inline-block;
+    vertical-align: top;
+    font-size: 13px;
+    font-weight: 400;
+    color: #969696;
+}
+
+/* ?======> Footer Style */
+#footer {
+    background-color: #353330;
+    padding-block: 40px;
+    text-align: center;
+    margin: auto;
+}
+
+#footer img {
+    margin: 15px 0;
+}
+
+#footer p {
+    color: #B3B3B3; /* Increased contrast for better readability */
+    font-size: 12px;
+}
+
+#footer .social-icons ul {
+    display: flex;
+    justify-content: center; /* Centers the social icons horizontally */
+    gap: 10px; /* Consistent spacing between icons */
+    padding: 0;
+    list-style: none; /* Removes bullet points */
+}
+
+#footer .social-icons ul li {
+    margin-top: 15px;
+    border-radius: 50%; /* Ensures a perfect circle */
+    width: 40px; /* Define width and height for circle */
+    height: 40px; /* Ensures the circle is even */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden; /* Keeps images inside the border */
+    background-color: #484540;
+}
+#footer .social-icons ul li a{
+     transition: background-color 0.3s ease-in; /* Smooth background color transition */
+}
+#footer ul li img {
+    width: 40px; /* Fits neatly within the circle */
+    height: 40px;
+}
+#footer .social-icons .facebook a:hover {
+    background-color: #1877F2;
+}
+#footer .social-icons .google a:hover {
+    background-color: #DB4437;
+}
+#footer .social-icons .linked a:hover {
+    background-color: #0077B5 ;
+}
+#footer .social-icons .twitter a:hover {
+    background-color: #0275d8;
+}
